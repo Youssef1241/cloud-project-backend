@@ -1,0 +1,12 @@
+POST localhost:3002/api/patients/history/65733e5d6be899ef700c7873 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZWRpY2FsSGlzdG9yeSI6eyJkYXRlIjoiMjAyMy0xMi0wOSIsImRpYWdub3NpcyI6IlNlYXNvbmFsIGFsbGVyZ2llcyIsInByZXNjcmlwdGlvbnMiOlsiQW50aWhpc3RhbWluZSJdLCJzdXJnZXJpZXMiOlsiTm9uZSJdfX0.npUnVUUO32-VK4nzXiFn5Bnwe8nfrc-qiM68146GLjo
+Content-Type: application/json
+
+{
+    "medicalHistory": {
+        "date": "2023-12-09",
+        "diagnosis": "Seasonal allergies",
+        "prescriptions": ["Antihistamine"],
+        "surgeries": ["None"]
+    }
+} 

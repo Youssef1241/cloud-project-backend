@@ -1,0 +1,16 @@
+const mongoose = require('mongoose');
+
+const patientSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    phone: String,
+    location: String,
+    medicalHistory: [{
+        date: Date,
+        diagnosis: String,
+        prescriptions: [String],
+        surgeries: [String]
+    }]
+});
+
+module.exports = mongoose.model('patient', patientSchema);
